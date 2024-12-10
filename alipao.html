@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Archivo+Black&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<style>
+    /* infos design  */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+  
+}
+body, html {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(portfolio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perso-title , .birth, .place, .contact ,.number ,.email,.about-me-title , .educ-title
+, .degree ,.insti , .year-lvl , .why-comp-title , .extra-title ,.hobbies , .fun, .intro-title {
+    font-family: "Archivo Black", sans-serif;
+}
+/* information main*/
+.info-main {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 80%;
+    height: 90%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows:10% 80% 10% ;
+    text-align: center;
+    border-radius: 20px;
+    transition: .6s ease-in;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    opacity: .7;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background-color:  rgb(241, 229, 241,.36); 
+}
+.info-main .member-name {
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 30px;
+    background-color:  rgb(221, 229, 241,.60);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+.info-main .infos-body {
+   display: flex;
+
+   align-items: center;
+   justify-content: space-between;    
+   grid-template-columns: 10fr 10fr 10fr;
+   gap: 3%;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    width: auto;
+    height: 90%;
+}
+.info-main .infos-body .info {
+    margin: 0; 
+    padding: 2%; 
+    height: 100%; 
+    width: auto; 
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    border-radius: 10px;
+}
+.info-main .back-button {
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    background-color:  rgb(241, 229, 241); 
+    padding: 1% 3%;
+    cursor: pointer;
+    border: none;
+    transition: .2s ease-in-out;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-main .back-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.05);
+}
+.mainbx {
+    background-color: rgb(221, 229, 241,.60);
+    padding: 0 15%;
+    border-radius: 20px;
+}
+.about-para{
+    font-size: 14px;
+}
+</style>
+<body>
+    <div class="info-main" id="info-main">
+        <div class="title-infoname">
+            <!-- The title of information body -->
+            <p class="member-name">ALIPAO, Mikaella Cassandra B.</p>
+        </div>
+        <!-- Personal, education and Extra curiccular -->
+        <div class="infos-body">
+            <div class="personal-infos info">
+                <!-- personal information body -->
+                <div class="box mainbx">
+                    <box-icon type='solid' name='user'></box-icon>
+                        <p class="perso-title">PERSONAL INFORMATION</p><br>
+                </div>
+                 <div class="more-perso">
+                    <div class="box">
+                        <box-icon type='solid' name='calendar-week'></box-icon>
+                        <p class="birth">BIRTHDATE:</p>
+                    </div>
+                    <p class="birth-info">December 28, 2005
+                    </p><br>
+                    <div class="box">
+                        <box-icon type='solid' name='map'></box-icon>
+                        <p class="place">PLACE:</p>
+                    </div>
+                    <p class="place-info">North Fairview, Quezon City, Metro Manila</p><br>
+                    <p class="contact">CONTACT INFORMATION:</p><br>
+                    <div class="box">
+                        <box-icon type='solid' name='phone-call'></box-icon>
+                        <p class="number">NUMBER:</p>
+                    </div>
+                    <p class="number-info">09692578141</p><br>
+                    <div class="box">
+                        <box-icon type='solid' name='envelope'></box-icon>
+                        <p class="email">EMAIL:</p>
+                    </div>
+                    <p class="email-info">alipao.m.c.bscs@gmail.com
+
+                    </p><br>
+                    <br>
+                    <div class="about-member">
+                        <p class="about-me-title">ABOUT ME:</p><br>
+                        <p class="about-para">
+                            I am a first-year Computer Science student with a strong curiosity about technology and its role in shaping the future. I enjoy learning new concepts, which inspire me to pursue a deeper understanding of programming and software development. My goal is to build a solid foundation in computer science and work on innovative projects that make a difference.</p>
+                    </div>
+                 </div>
+            </div>
+            <!-- Education body -->
+            <div class="educ info">
+                <div class="box mainbx">
+                    <box-icon type='solid' name='book-open'></box-icon>
+                    <p class="educ-title ">EDUCATION</p><br>
+                </div>
+                <div class="more-educ">
+                    <div class="box">
+                        <box-icon type='solid' name='graduation'></box-icon>
+                        <p class="degree">DEGREE:</p>
+                    </div>
+                    <p class="degree-info">Bachelor of Science in Computer Science</p><br>
+                    <div class="box">
+                        <box-icon type='solid' name='school'></box-icon>
+                        <p class="insti">INSTITUTION:</p>
+                    </div>
+                    <p class="insti-info">Eulogio "Amang" Rodriguez Institute of Science and Technology - Manila Campus
+                    </p><br>
+                    <p class="year-lvl">YEAR LEVEL:</p>
+                    <p class="year-info">First-Year Student</p><br>
+                    <div class="why-comp">
+                        <p class="why-comp-title">WHY COMPUTER SCIENCE?</p><br>
+                        <p class="why-comp-para">I chose computer science because it combines logic, creativity, and innovation. I’m fascinated by how technology can solve complex problems and bring new ideas to life. Studying computer science allows me to turn my passion for technology into skills that can help improve lives and contribute to society.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- extra curricular body -->
+            <div class="extra info">
+                <p class="extra-title mainbx">EXTRA CURRICULAR:</p><br>
+                <div class="more-extra">
+                    <p class="hobbies">HOBBIES:</p>
+                    <p class="hob-info">I enjoy reading books, doing makeup, exploring coding tutorials, and solving puzzles.
+
+                    </p><br>
+                    <p class="fun">FUN FACTS:</p>
+                    <p class="fun-info"> I can sing</p>
+                </div>
+            </div>
+        </div>
+        <!-- Back button -->
+        <a href="portfolio.html">
+            <div class="backbtn" id="backBtn">
+                <button class="back-button" id="back-button" type="button">
+                    BACK
+                </button>
+            </div>
+        </a>
+    </div>
+   
+   
+</body>
+</html>
